@@ -15,10 +15,10 @@ public class FizzBuzzTest {
 		assertEquals(test.getFizzBuzz(3), "Fizz");
 	}
 	
-//	@Test
-//	public void returnsBuzzWhenPassingThree() {
-//		FizzBuzz test =  new FizzBuzz();
-//		assertEquals(test.getFizzBuzz(3), "Fizz");
-//	}
+	@Test
+	public void returnsBuzzWhenPassingFive() {
+		FizzBuzz test =  new FizzBuzz();
+		assertEquals(test.getFizzBuzz(5), "Buzz");
+	}
 
 }
