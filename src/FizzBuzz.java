@@ -8,7 +8,7 @@ public class FizzBuzz {
 			return "FizzBuzz";
 		else if(arg % 3 == 0)
 			return "Fizz";
-		else if(arg == 5)
+		else if(arg % 5 == 0)
 			return "Buzz";
 		else
 			return Integer.toString(arg);

@@ -35,4 +35,10 @@ public class FizzBuzzTest {
 	public void returnsFizzWhenPassingSix() {
 		assertEquals("Fizz", test.getFizzBuzz(6));
 	}
+	
+	@Test
+	public void returnBuzzWhenPassingTen() {
+		assertEquals("Buzz", test.getFizzBuzz(10));
+	}
+	
 }
