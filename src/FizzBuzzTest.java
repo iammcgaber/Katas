@@ -20,5 +20,11 @@ public class FizzBuzzTest {
 		FizzBuzz test =  new FizzBuzz();
 		assertEquals(test.getFizzBuzz(5), "Buzz");
 	}
+	
+	@Test
+	public void returnsFizzBuzzWhenPassingFifteen() {
+		FizzBuzz test =  new FizzBuzz();
+		assertEquals(test.getFizzBuzz(15), "FizzBuzz");
+	}
 
 }
