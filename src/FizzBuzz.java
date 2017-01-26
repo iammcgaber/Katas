@@ -4,7 +4,7 @@ public class FizzBuzz {
 	public String getFizzBuzz(int arg) {
 		if(arg == 0)
 			return "0";
-		else if(arg == 15)
+		else if(arg % 15 == 0)
 			return "FizzBuzz";
 		else if(arg % 3 == 0)
 			return "Fizz";
@@ -12,7 +12,6 @@ public class FizzBuzz {
 			return "Buzz";
 		else
 			return Integer.toString(arg);
-		
 	}
 	
 }

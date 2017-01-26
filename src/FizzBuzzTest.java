@@ -41,4 +41,8 @@ public class FizzBuzzTest {
 		assertEquals("Buzz", test.getFizzBuzz(10));
 	}
 	
+	@Test
+	public void returnFizzBuzzWhenPassingThirty() {
+		assertEquals("FizzBuzz", test.getFizzBuzz(30));
+	}
 }
