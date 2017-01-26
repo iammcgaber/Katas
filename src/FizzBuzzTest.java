@@ -1,30 +1,38 @@
 import static org.junit.Assert.*;
+
+import org.junit.Before;
 import org.junit.Test;
 
 public class FizzBuzzTest {
-
+	FizzBuzz test;
+	
+	@Before
+	public void setup() {
+		test = new FizzBuzz();
+	}
+	
 	@Test
 	public void returnsZeroWhenPassingZero() {
-		FizzBuzz test =  new FizzBuzz();
-		assertEquals(test.getFizzBuzz(0), "0");
+		assertEquals("0", test.getFizzBuzz(0));
 	}
 	
 	@Test
 	public void returnsFizzWhenPassingThree() {
-		FizzBuzz test =  new FizzBuzz();
-		assertEquals(test.getFizzBuzz(3), "Fizz");
+		assertEquals("Fizz", test.getFizzBuzz(3));
 	}
 	
 	@Test
 	public void returnsBuzzWhenPassingFive() {
-		FizzBuzz test =  new FizzBuzz();
-		assertEquals(test.getFizzBuzz(5), "Buzz");
+		assertEquals("Buzz", test.getFizzBuzz(5));
 	}
 	
 	@Test
 	public void returnsFizzBuzzWhenPassingFifteen() {
-		FizzBuzz test =  new FizzBuzz();
-		assertEquals(test.getFizzBuzz(15), "FizzBuzz");
+		assertEquals("FizzBuzz", test.getFizzBuzz(15));
 	}
-
+	
+	@Test
+	public void returnsFizzWhenPassingSix() {
+		assertEquals("Fizz", test.getFizzBuzz(6));
+	}
 }
